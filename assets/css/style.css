@@ -1,0 +1,332 @@
+html,body { 
+  width: 100%;
+  height: 100vh;
+  margin: 0;
+  cursor: url(../img/Sheikah-cursor.png), default;
+}
+
+
+/* Pre-loading Screen */
+#preloader{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: black;
+}
+
+#loader {
+  margin: 0;
+  position: absolute;
+  top: 43%;
+  left: 47%;
+    transform: translate(-50%, -50%)
+}
+
+#loader .circle {
+  width:30px;
+  height: 30px;
+  background-color: white;
+  border-radius: 50%;
+  position: absolute;
+  transition: all 0.3s;
+  animation: tri-force 0.75s infinite;
+}
+
+#loader .circle.glow {
+  box-shadow: 0px 0px 20px white;
+}
+#loader #circle1, #loader #circle4, #loader #circle5 {
+  animation-delay: 0.4s;
+}
+#loader #circle1 {
+  left: 35px;
+}
+#loader #circle2 {
+  top: 25px;
+}
+#loader #circle3 {
+  top: 25px;
+  left: 70px;
+}
+#loader #circle4 {
+  top: 60px;
+}
+#loader #circle5 {
+  top: 60px;
+  left: 70px;
+}
+#loader #circle6 {
+  top: 85px;
+  left: 35px;
+}
+
+@keyframes tri-force {
+  0% {transform: scale(1);}
+  50% {transform: scale(0.5);}
+  100% {transform: scale(1);}
+}
+
+/* Hero Page with welcome image */
+#IntroPage {
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  box-sizing: border-box;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.5)),url(../img/Doggo.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+#IntroPage h1 {
+    color: white;
+    font-size: 6em;
+    font-family: Roboto;
+}
+/* Self introduction/About Page */
+#About{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-content: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.text{
+  font-family: Oxygen;
+  font-size: 1.2em;
+  font-color: #003262;
+  text-align: center;
+  width: 40%;
+}
+
+#profile img {
+  width:200px;
+  height:200px;
+  border-radius: 50%;
+}
+
+/* Resume Page */
+#Experiences{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.column{
+  display: flex;
+  flex-direction: column;
+  flex-basis: 100%;
+  flex: 1;
+  justify-content: space-evenly;
+
+}
+
+.logo img{
+  border-radius: 50%;
+  height: 100px;
+  width: 100px;
+  border: 1px solid #E2E5E9;
+  margin: 10px;
+}
+
+.logo{
+  display: flex;
+    justify-content: space-around;
+    align-items: center;
+    float: left;
+    border-radius: 5px;
+    transition: 0.3s;
+    position: relative;
+    bottom: 8%;
+}
+
+
+.logo h2{
+  font-family: Oxygen;
+  font-size: 1.5em;
+  font-weight: lighter;
+  width: 400px;
+  position: relative;
+  right: 15%;
+}
+
+#Activities h2{
+  color: white;
+}
+
+/* Title text above each experience */
+.help {
+  position: relative;
+  bottom: 5%;
+  left: 15%;
+  width: 400px;
+  text-align: center;
+  font-family: Oxygen;
+  font-size: 2em;
+}
+
+#Description2 h1{
+  color: white;
+}
+/* Master Sword Pointer and Animation */
+#pointer{
+  height: 1.5em;
+  width: 1.5em;
+  border: 0px;
+  margin: 0px;
+  border-radius: none;
+  position: relative;
+  top: 10px;
+  margin-right: 5px;
+  animation: MasterSword 2000ms infinite;
+}
+
+@keyframes MasterSword {
+  0% { left: 0px; box-shadow: 0 0 0px white; }
+  40% { left: 5px; box-shadow: 0 0 40px white; }
+  60% { left: 5px; box-shadow: 0 0 40px white; }
+  100% { left: 0px; box-shadow: 0 0 0px white; }
+}
+
+/* Contact Page */
+#Contact-Page{
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  border-collapse: separate;
+  border-spacing: 30px;
+  background-image: linear-gradient(rgba(0,168,255,1), rgba(0,168,255,0.75), rgba(0,168,255,0.5), rgba(0,168,255,0.25));
+}
+
+#Contact-Page h2{
+  width: 700px;
+  font-family: Oxygen;
+  font-size: 3em;
+  color: white;
+  text-align: center
+}
+
+#Contact-Page p{
+  width: 700px;
+  font-family: Oxygen;
+  font-size: 1.2em;
+  color: white;
+  text-align: center
+}
+
+.contact-text{
+  position: relative;
+  bottom: 15%;
+}
+.contact-icons {
+  width:600px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: space-between;
+  align-content: space between;
+}
+
+.Icons{
+  border: 3px solid #7E9CC2;
+  border-radius: 50%;
+  width: 150px;
+    height: 150px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+  background: white;
+  transition: all .4s ease;
+}
+
+.Icons:hover{
+  transform: scale(1.1);
+}
+
+/* Cody House Verticle Slider. 
+CSS included in javascript library. Items modified to match my site. 
+Asked Linus and he gave the okay */
+
+ol, ul {
+  list-style: none;
+}
+.cd-scroll-down {
+  position: absolute;
+  left: 50%;
+  right: auto;
+  transform: translateX(-50%);
+  bottom: 20px;
+  width: 38px;
+  height: 44px;
+  background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
+}
+
+/* No Touch devices */
+.cd-nav-trigger {
+  display: none;
+}
+
+.no-touch #cd-vertical-nav {
+  position: fixed;
+  right: 40px;
+  top: 50%;
+  bottom: auto;
+  transform: translateY(-50%);
+  z-index: 1;
+}
+.no-touch #cd-vertical-nav li {
+  text-align: right;
+}
+.no-touch #cd-vertical-nav a {
+  display: inline-block;
+}
+.no-touch #cd-vertical-nav a:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.no-touch #cd-vertical-nav a span {
+  float: right;
+  display: inline-block;
+  transform: scale(0.6);
+}
+.no-touch #cd-vertical-nav a:hover span {
+  transform: scale(1);
+}
+.no-touch #cd-vertical-nav a:hover .cd-label {
+  opacity: 1;
+}
+.no-touch #cd-vertical-nav a.is-selected .cd-dot {
+  background-color: white;
+}
+.no-touch #cd-vertical-nav .cd-dot {
+  position: relative;
+  /* we set a top value in order to align the dot with the label. If you change label's font, you may need to change this top value*/
+  top: 8px;
+  height: 12px;
+  width: 12px;
+  border-radius: 50%;
+  background-color: #00A8FF;
+  transform-origin: 50% 50%;
+}
+.no-touch #cd-vertical-nav .cd-label {
+  position: relative;
+  margin-right: 10px;
+  color: white;
+  font-size: 1.5em;
+  opacity: 0;
+  transform-origin: 100% 50%;
+}
+
