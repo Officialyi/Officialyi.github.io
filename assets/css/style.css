@@ -5,7 +5,6 @@ html,body {
   cursor: url(../img/Sheikah-cursor.png), default;
 }
 
-
 /* Pre-loading Screen */
 #preloader{
   width: 100%;
@@ -15,10 +14,10 @@ html,body {
 }
 
 #loader {
-  margin: 0;
-  position: absolute;
-  top: 43%;
-  left: 47%;
+    margin: 0;
+    position: absolute;
+    top: 43%;
+    left: 48%;
     transform: translate(-50%, -50%)
 }
 
@@ -68,14 +67,12 @@ html,body {
 
 /* Hero Page with welcome image */
 #IntroPage {
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  box-sizing: border-box;
-  align-content: center;
-  align-items: center;
-  justify-content: center;
-
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
     background-image: linear-gradient(rgba(255, 255, 255, 0.3),rgba(0, 0, 0, 0.5)),url(../img/Doggo.png);
     background-size: cover;
     background-position: center;
@@ -87,12 +84,12 @@ html,body {
     font-size: 6em;
     font-family: Roboto;
 }
+
 /* Self introduction/About Page */
 #About{
   width: 100%;
   height: 100vh;
   display: flex;
-  align-content: center;
   align-items: center;
   justify-content: center;
   flex-direction: column;
@@ -101,7 +98,7 @@ html,body {
 .text{
   font-family: Oxygen;
   font-size: 1.2em;
-  font-color: #003262;
+  color: #003262;
   text-align: center;
   width: 40%;
 }
@@ -112,9 +109,76 @@ html,body {
   border-radius: 50%;
 }
 
-/* Resume Page */
+/*TEST Page*/
+
+#Experiences #work-experience{
+    background-color: aliceblue;
+}
+
+#Experiences #extra-activities{
+    background-color: rgb(238,238,238);
+}
+
 #Experiences{
-  width: 100%;
+    width: 100%;
+    height: 100vh;
+    overflow: auto;
+    position: relative;
+}
+
+.one-of-two{
+    width: 50%;
+    height: 100vh;
+    float: left;
+}
+
+.activity{
+    overflow: auto;
+    position: absolute;
+    transform: translateY(-50%);
+    margin-left: 10%;
+    height: 300px;
+}
+
+.activity-text{
+    position: relative;
+    top: 25%;
+    transform: translateY(-50%)
+}
+
+#item1, #item2, #item3 {
+    position: absolute;
+    width: 500px;
+}
+
+#item1{
+    top: 30%;
+}
+
+#item2{
+    top: 50%;
+}
+
+#item3{
+    top: 70%;
+}
+
+.activity h2{
+    font-size: 1.5em;
+    font-weight: 700;
+    margin: 0;
+}
+
+.activity p{
+    margin: 0;
+    font-weight: 300;
+    font-size: 1em;
+}
+
+/* Resume Page */
+/*#Experiences{
+  position: relative;
+    width: 100%;
   height: 100vh;
   display: flex;
   flex-direction: row;
@@ -128,7 +192,7 @@ html,body {
   flex: 1;
   justify-content: space-evenly;
 
-}
+}*/
 
 .logo img{
   border-radius: 50%;
@@ -139,7 +203,10 @@ html,body {
 }
 
 .logo{
-  display: flex;
+    position: absolute;
+    top: 10%;
+    left
+    display: flex;
     justify-content: space-around;
     align-items: center;
     float: left;
@@ -147,9 +214,14 @@ html,body {
     transition: 0.3s;
     position: relative;
     bottom: 8%;
+    height: 200px;
 }
 
+#logolink:hover{
+  transform: scale(1.2);
+}
 
+/*
 .logo h2{
   font-family: Oxygen;
   font-size: 1.5em;
@@ -163,20 +235,27 @@ html,body {
   color: white;
 }
 
-/* Title text above each experience */
+ Title text above each experience 
 .help {
-  position: relative;
-  bottom: 5%;
-  left: 15%;
-  width: 400px;
-  text-align: center;
-  font-family: Oxygen;
-  font-size: 2em;
+    position: absolute;
+    top: 2%;
+    margin-left: auto;
+    margin-right:auto;
+    transform: translate (-50%,0);
+    width: 500px;
+    text-align: center;
+    font-family: Oxygen;
+    font-size: 2em;
+}
+
+.help h1{
+    margin: 0;
 }
 
 #Description2 h1{
   color: white;
-}
+}*/
+
 /* Master Sword Pointer and Animation */
 #pointer{
   height: 1.5em;
@@ -262,15 +341,26 @@ Asked Linus and he gave the okay */
 ol, ul {
   list-style: none;
 }
-.cd-scroll-down {
-  position: absolute;
-  left: 50%;
-  right: auto;
-  transform: translateX(-50%);
-  bottom: 20px;
-  width: 38px;
-  height: 44px;
-  background: url("../img/cd-arrow-bottom.svg") no-repeat center center;
+
+.fa-chevron-down{
+    animation: arrow-movement 2s linear infinite;
+    position: absolute;
+    left: 50%;
+    bottom: 2%;
+    transform: translate (-50%,-50%);
+    width: 14px;
+    height: 16px;
+    font-size: 30px;
+    color: white;
+}
+
+@keyframes arrow-movement {
+    0%,100% { 
+      bottom: 2%;
+    }
+    50%{
+        bottom: 5%;
+    }
 }
 
 /* No Touch devices */
