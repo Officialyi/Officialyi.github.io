@@ -1,0 +1,669 @@
+/*----------APPLIES TO ALL / REUSABLE----------*/
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Oxygen', sans-serif;
+}
+
+.dark-background{
+    background-color: #292E37;
+}
+
+
+.section-headline{
+    color: #4e4d4d;
+    text-align: center;
+    font-size: 40px;
+    font-weight: 300;
+}
+
+.subsection-headline{
+    color: #4e4d4d;
+    text-align: center;
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+section{
+    padding: 70px 0;
+}
+
+.line{
+    height: 2px;
+    width: 80px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 30px;
+    margin-bottom: 60px;
+}
+
+.subsection-line{
+    height: 2px;
+    width: 80px;
+    background-color: lightgray;
+    margin: 0 auto;
+    margin-top: 20px;
+}
+
+.row{
+    width: 70%;
+    margin: 0 auto;
+    overflow: auto;
+}
+
+.one-of-two{
+    width: 50%;
+    float: left;
+}
+
+.one-of-three{
+    width: 33.33%;
+    float: left;
+}
+
+
+.one-of-four{
+    width: 25%;
+    float: left;
+}
+
+.two-of-three{
+    width: 66.66%;
+    float: left;
+}
+
+.three-of-four{
+    width: 75%;
+    float: left;
+}
+
+
+/*-------------HEADER-------------*/
+
+#header{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../img/AstanaKazakhstan.png');
+    height: 100vh;
+    background-position: center;
+    background-size: cover;
+    color: white;
+    position: relative;
+}
+
+#header .dots{
+    background-image: url('../img/pattern-bg.png');
+    height: 100%;
+}
+
+#header nav{
+    position:fixed;
+    padding: 30px 10px;
+    width: 100%;
+    z-index: 2;
+}
+
+nav ul{
+    position: absolute;
+    right: 3%;
+    top: 50%;
+    transform: translate(0,-50%);
+    list-style: none;
+}
+
+nav li{
+    float: left;
+    margin: 0 15px;
+}
+
+#header nav a{
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+}
+
+#header .headline-container{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+}
+
+#header .headline-container h1{
+    font-size: 60px;
+    font-weight: 400;
+}
+
+#header .headline-container h2{
+    font-size: 65px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 300;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+#header .headline-container h3{
+    font-size: 40px;
+    font-family: 'Nanum Brush Script', cursive;
+    font-weight: 300;
+    text-align: center;
+}
+
+#header .headline-container a{
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    font-size: 25px;
+    font-weight: 300;
+    padding: 5px 15px;
+}
+
+
+#header i{
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translate(-50%,0);
+    font-size: 50px;
+    color: bisque;
+}
+
+#header .headline-container a:hover{
+    background-color: #24e098;
+    transition: background-color 1s;
+}
+
+
+
+/*------------history------------*/
+#history{
+    background-color: #eeebcf;
+}
+
+.history-subsection{
+    margin: 100px 0;
+}
+
+.history-subsection .content{
+    position: relative;
+    height: 400px;
+    text-align: center;
+}
+
+.history-subsection .content img{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+    height: 80%;
+    width: 550px;
+}
+
+.history-subsection .content iframe{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    overflow: auto;
+    display: block;
+    height: 80%;
+}
+
+.history-subsection a{
+    text-decoration: none;
+}
+
+.history-subsection .content h4{
+    position: absolute;
+    bottom: 0;
+    height: 10%;
+    width: 100%
+    
+}
+
+.history-subsection #text-description{
+    margin-top: 80px;
+}
+
+.history-subsection .steps-container{
+    margin-bottom: 30px;
+    margin-left: 50px;
+}
+
+.history-subsection h3{
+    font-size: 25px;
+    margin: 0;
+}
+
+.history-subsection .steps-description{
+    font-weight: 300;
+    margin: 0;
+}
+
+
+
+
+/*----------------STATS----------------*/
+
+#stats{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../img/imperial-palace.jpg');
+    background-size: cover;
+    background-position: center;
+    text-align: center;
+    padding: 150px 0;
+    font-family: 
+}
+
+#stats i{
+    color: #549dc5;
+    font-size: 50px;
+}
+
+#stats h3, #stats p{
+    font-family: 'Nanum Brush Script', cursive;
+    color: white;
+}
+
+#stats p{
+    font-size: 85px;
+    font-weight: 700;
+}
+
+#stats h3{
+    font-size: 25px;
+    font-weight: 300;
+}
+
+
+/*---------------Resources---------------*/
+
+#resources{
+    background-color: rgb(244,244,244);
+
+}
+
+#resources .mason-box{
+    column-count: 1;
+    column-gap: 1em;
+    width: 70%;
+    height: 45em;
+    margin: 0 auto;
+    border: 1px solid lightgrey;
+    border-radius: 10px;
+    text-align: center;
+    position: relative;
+    box-shadow: 0 1px 4px 1px rgba(0,0,0,.25);
+}
+
+#resources .mason-box .tile{
+    display: inline-block;
+    margin: 0em 0 1em;
+    width: 100%;
+}
+
+#resources .mason-box .tile #banner{
+    height: 12em;
+}
+
+#resources .mason-box .tile #content{
+    height: 20em;
+}
+
+#resources .mason-box img{
+    width: 100%;
+    height: 12em;
+    border-radius: 8px;
+}
+
+#resources a{
+    /*background-color: #468eb5;*/
+    color: #468eb5;
+    padding: 10px 30px;
+    font-weight: 400;
+    text-decoration: none;
+    position: absolute;
+    bottom: 5%;
+    left: 5%;
+    transform: translate (-25%, 0);
+    overflow: auto;
+}
+
+#resources .mason-box h2, p{
+    width: 80%;
+    margin: 15px auto;
+}
+
+#resources .mason-box h2{
+    font-weight: 300;
+    font-size: 20px;
+}
+
+#resources .mason-box p{
+    font-weight: 400;
+    font-size: 15px;
+}
+
+
+
+#resources a:hover{
+    background-color: #468eb5;
+    color: white;
+    border-radius: 5px;
+}
+
+/*---------------PEOPLE---------------*/
+
+#people{
+    text-align: center;
+    color: #4e4d4d;
+}
+
+#people h3{
+    font-size: 25px;
+    margin-top: 10px;
+    text-align: center;
+}
+
+
+#people p{
+    margin: 10px auto;
+}
+
+#people i{
+    font-size: 25px;
+}
+
+#people img{
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+}
+
+
+/*-------------REQUEST-------------*/
+
+#request{
+    background-image: linear-gradient(rgba(0,0,0,.6),rgba(0,0,0,.6)), url('../img/street.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+#request h2{
+    color: white;
+}
+
+#request .one-of-three{
+    text-align: right;
+}
+
+#request input[type="text"]{
+    width: 50%;
+    height: 30px;
+}
+
+#request input[type="submit"]{
+    text-decoration: none;
+    background-color: #468eb5;
+    color: white;
+    padding: 10px 30px;
+    font-weight: 400;
+    border: 0;
+    font-size: 18px;
+}
+
+
+#request .row{
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+/*--------------------FOOTER--------------------*/
+footer{
+    background-color: #292E37;
+    padding: 30px 0;
+}
+
+footer .row{
+    width: 80%;
+}
+
+footer a{
+    text-decoration: none;
+    color: white;
+}
+
+footer li{
+    list-style: none;
+    float: left;
+    padding: 0 20px;
+}
+
+footer p{
+    text-align: center;
+    color: lightgray;
+    margin-top: 15px;
+}
+
+
+
+
+/*---------------------------------------*/
+/*-------------MEDIA QUERIES-------------*/
+/*---------------------------------------*/
+
+
+/*--------------HEADER--------------*/
+
+@media only screen and (max-width: 470px){
+    
+    #header .headline-container h1{
+        font-size: 40px;
+    }
+    
+    #header .headline-container h2{
+        font-size: 25px;
+    }
+    
+    #header .headline-container a{
+        font-size: 20px;
+    }
+
+}
+
+
+/*START MOBILE NAV*/
+
+.mobile-menu{
+    display: none;
+}
+
+.show{
+    max-height: 300px;
+}
+
+@media only screen and (max-width: 700px){
+    #header nav img{
+        display: none;
+    }
+    
+   nav ul{
+        max-height: 0;
+        overflow: hidden;
+        position: static;
+        transform: translate(0,0);
+    }
+    
+     nav{
+        background-color: #292E37;
+    }
+    
+    .mobile-menu{
+        display: block;
+    }
+  
+
+    nav li{
+        float: none;
+        padding-bottom: 25px;
+    }
+      
+}
+
+
+
+
+
+
+
+/*-------------------History-------------------*/
+
+@media only screen and (max-width: 1200px){
+    #history .one-of-two{
+        width: 100%;
+    }
+    
+    #history .one-of-two img{
+        float: none;
+    }
+    
+    #history .video{
+        text-align: center;
+        margin-bottom: 50px;
+        width: 500px;
+    }
+}
+
+
+@media only screen and (max-width: 550px){
+    #history .circle{
+        float: none;
+        margin: 0 auto;
+    }
+    
+    #history .steps-container{
+        text-align: center;
+        margin-left: 0;
+    }
+    
+    #history .one-of-two img{
+        width: 70%;
+    }
+}
+
+
+/*--------------STATS--------------*/
+@media only screen and (max-width: 1250px){
+    #stats .one-of-four{
+        width: 100%;
+        margin-bottom: 60px;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #stats p{
+        font-size: 65px;
+    }
+}
+
+
+/*-------------RESOURCES-------------*/
+
+@media only screen and (max-width: 1550px){
+    #resources ul{
+        padding: 0 25px;
+        width: 275px;
+    }    
+}
+
+@media only screen and (max-width: 1250px){
+    #resources ul{
+        width: 220px;
+    }    
+}
+
+@media only screen and (max-width: 1100px){
+    #resources .one-of-three{
+        width: 100%;
+        margin-bottom: 40px;
+    }
+}
+
+@media only screen and (max-width: 370px){
+    #resources ul{
+        width: 200px;
+    }    
+}
+
+
+
+/*-------------TEAM-------------*/
+
+@media only screen and (max-width: 1440px){
+    #people img{
+        width: 80%;
+    }
+}
+
+@media only screen and (max-width: 850px){
+    #people .one-of-three{
+        width: 100%;
+        margin-bottom: 50px;
+    }
+    
+    #people img{
+        width: 50%;
+    }
+}
+
+@media only screen and (max-width: 550px){
+    #people img{
+        width: 75%;
+    }
+}
+
+
+/*-------------REQUEST-------------*/
+
+@media only screen and (max-width: 700px){
+    #request .one-of-three, #request .two-of-three{
+        width: 100%;
+        text-align: center;
+    }
+    
+    #request input[type="text"]{
+        margin: 0 auto;
+        width: 80%;
+    }
+}
+
+
+/*-----------FOOTER-----------*/
+
+@media only screen and (max-width: 1150px){
+    #footer .three-of-four, #footer .one-of-four{
+        width: 100%;
+    }
+    
+    #footer li{
+        float: none;
+        display: inline-block;
+    }
+    
+    #footer ul{
+        text-align: center;
+        margin-bottom: 15px;
+    }
+}
+
+
+
+
+
+
+
